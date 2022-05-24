@@ -1,0 +1,21 @@
+{
+    "name": "rostyslav/mvc",
+    "description": "router",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "mvc\\core\\": "core/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rostyslav.Kibkalo",
+            "email": "rostislav.kibkalo@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "aigletter/contracts": "^1.0"
+    }
+}
