@@ -1,10 +1,10 @@
 <?php
 
-namespace mvc\core;
+namespace mvc\app\Controllers;
 
 class Category
 {
-    public function getCategory(): string
+    public function get(): string
     {
         return 'This is Category Page!' . PHP_EOL;
     }

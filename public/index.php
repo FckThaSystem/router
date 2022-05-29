@@ -4,13 +4,10 @@ ini_set('display_errors', '1');
 
 include __DIR__ ."/../vendor/autoload.php";
 
-$router = new \mvc\core\Router();
+$component = new \mvc\app\Components\Routing\RouterFactory();
 
-$router->addRoute('/search/product', function (){
-    echo 'This is product page' . PHP_EOL;
-});
-$router->addRoute('/catalog/category', [\mvc\core\Category::class, 'getCategory']);
+$router = $component->createComponent();
 
 $action = $router->route($_SERVER['REQUEST_URI']);
-
+//var_dump($action());
 $action();
