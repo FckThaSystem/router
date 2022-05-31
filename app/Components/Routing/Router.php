@@ -1,15 +1,28 @@
 <?php
-
+/**
+ * @version 1.0.0
+ */
 namespace mvc\app\Components\Routing;
 
 include dirname(__DIR__, 2) . '/../vendor/autoload.php';
 
 use Aigletter\Contracts\Routing\RouteInterface;
+use \ReflectionMethod;
 
+/**
+ * Этот класс приминимает отвечает за раутинг всего проекта.
+ *
+ * @author Rostyslav Kibkalo <rostislav.kibkalo@gmail.com>
+ */
 class Router implements RouteInterface
 {
+    /** @var array  */
     protected $routes = array();
-
+    /**
+     * @param string $uri
+     *
+     * @return callable
+     */
     public function route(string $uri): callable
     {
         return function () use ($uri)
@@ -44,7 +57,6 @@ class Router implements RouteInterface
                                         $method = $action[1];
                                         $reflectionMethod = new \ReflectionMethod($instance, $method);
                                         $parameters = $this->getParams($reflectionMethod);
-                                        var_dump(array('params' => $parameters, 'get' => $_GET));
                                         if($parameters){
                                             $reflectionMethod->invokeArgs($instance, $parameters);
                                         }else{
@@ -65,8 +77,12 @@ class Router implements RouteInterface
             }
         };
     }
-
-    public function getParams($method): array
+    /**
+     * @param ReflectionMethod $method
+     *
+     * @return array
+     */
+    public function getParams(ReflectionMethod $method): array
     {
         $params = array();
         if(count($method->getParameters()) > 0){
@@ -85,7 +101,10 @@ class Router implements RouteInterface
         }
             return $params;
     }
-
+    /**
+     * @param string $path
+     * @param mixed $action
+     */
     public function addRoute($path, $action)
     {
         $this->routes[] = array(
