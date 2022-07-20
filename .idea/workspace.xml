@@ -1,14 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de89be8a-61b4-4c10-acf7-64986e4eff1f" name="Changes" comment="">
+    <list default="true" id="ba4d0cdc-b60d-4d10-a0fb-c8cb2e825f22" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/mvc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mvc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Components/Routing/Router.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Components/Routing/Router.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Components/Routing/RouterFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Components/Routing/RouterFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Controllers/ProductController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +28,7 @@
       <path value="$PROJECT_DIR$/vendor/aigletter/contracts" />
     </include_path>
   </component>
-  <component name="ProjectId" id="29c0qt5gIyctMxmZzmnrSjBGr4h" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2B6U8QcZOaQjgFGIrNAffmhkw3W" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,19 +39,24 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="de89be8a-61b4-4c10-acf7-64986e4eff1f" name="Changes" comment="" />
-      <created>1653397265550</created>
+      <changelist id="ba4d0cdc-b60d-4d10-a0fb-c8cb2e825f22" name="Changes" comment="" />
+      <created>1656225868847</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1653397265550</updated>
-      <workItem from="1653397269190" duration="12199000" />
-      <workItem from="1653999858179" duration="390000" />
+      <updated>1656225868847</updated>
+      <workItem from="1656225870801" duration="3034000" />
+      <workItem from="1657448640703" duration="3997000" />
+      <workItem from="1657462044010" duration="7198000" />
+      <workItem from="1658130726154" duration="2016000" />
+      <workItem from="1658241929290" duration="7123000" />
+      <workItem from="1658341704230" duration="304000" />
     </task>
     <servers />
   </component>

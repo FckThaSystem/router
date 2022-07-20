@@ -9,5 +9,4 @@ $component = new \mvc\app\Components\Routing\RouterFactory();
 $router = $component->createComponent();
 
 $action = $router->route($_SERVER['REQUEST_URI']);
-//var_dump($action());
 $action();
