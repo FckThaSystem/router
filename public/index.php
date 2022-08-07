@@ -9,11 +9,11 @@ $action = $router->route($_SERVER['REQUEST_URI']);
 
 try{
     $action();
-}catch (Throwable $throwable){
-    if(strpos($throwable->getMessage(), '404')){
+}catch (\mvc\app\Components\Exceptions\HttpException $exception){
+    if(strpos($exception->getMessage(), '404')){
         $http_exception = new \mvc\app\Components\Exceptions\NotFoundHttpException();
         echo $http_exception->getHttpException();
-    }elseif (strpos($throwable->getMessage(), 'Argument')){
+    }elseif (strpos($exception->getMessage(), 'Argument')){
         $http_exception = new \mvc\app\Components\Exceptions\FewArgumentsHttpException();
         echo $http_exception->getHttpException();
     }else{

@@ -2,7 +2,9 @@
 
 namespace mvc\app\Components\Exceptions;
 
-class HttpException
+use Exception;
+
+class HttpException extends Exception
 {
     protected $message;
 
