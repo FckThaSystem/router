@@ -7,6 +7,9 @@ namespace mvc\app\Components\Routing;
 include dirname(__DIR__, 2) . '/../vendor/autoload.php';
 
 use Aigletter\Contracts\Routing\RouteInterface;
+use mvc\app\Components\Exceptions\FewArgumentsHttpException;
+use mvc\app\Components\Exceptions\NotFoundHttpException;
+use mvc\app\Components\Exceptions\ServerErrorHttpException;
 use \ReflectionMethod;
 
 /**
@@ -60,7 +63,7 @@ class Router implements RouteInterface
                                         if($parameters){
                                             $reflectionMethod->invokeArgs($instance, $parameters);
                                         }else{
-                                            throw new \Exception('Too few arguments!');
+                                            throw new FewArgumentsHttpException();
                                         }
 
                                     }
@@ -70,10 +73,10 @@ class Router implements RouteInterface
                     }
 
                 }else{
-                    throw new \Exception('404. There route like ' . $uri . ' does not exist!');
+                    throw new NotFoundHttpException();
                 }
             }else{
-               throw new \Exception('404. There route like ' . $uri . ' does not exist!');
+                throw new ServerErrorHttpException();
             }
         };
     }
